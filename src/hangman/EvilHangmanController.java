@@ -44,7 +44,6 @@ public class EvilHangmanController extends HangmanController {
 				break;
 			}
 		}
-		sc.close();
 		
 		if (isEvil) {
 			EvilHangmanController controller = new EvilHangmanController();
@@ -53,5 +52,6 @@ public class EvilHangmanController extends HangmanController {
 			HangmanController controller = new HangmanController();
 			controller.runGame();
 		}
+		sc.close();
 	}
 }
